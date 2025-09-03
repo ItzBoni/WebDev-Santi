@@ -115,7 +115,7 @@
 
     <div id="Entertainment">
     <h2>Books, Movies & TV Shows</h2>
-    <table>
+    <table border="1" cellpadding="10">
         <thead>
             <tr>
                 <th>
@@ -152,7 +152,164 @@
     </table>
     </div>
 
-    <a href="destination.html">Click here to see my favorite destination!</a>
+    <hr>
+
+    <a href="destination.html"><em>My favorite spots!</em></a>
+
+    <div id="heroes">
+        <h2>Heroes, Writers, Musicians</h2>
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Picture</th>
+                    <th>Name</th>
+                    <th>Birth/Death date</th>
+                    <th>Profession</th>
+                    <th>Achievements</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://cdn.britannica.com/25/102225-050-18CD8724/Marie-Curie.jpg" width="100" height="150"/></td>
+                    <td>Marie Curie</td>
+                    <td>November 7, 1867 - July 4, 1934</td>
+                    <td>Physicist and Chemist</td>
+                    <td>She discovered radium, polonium, coined the term radioactivity and was the first woman to win a Nobel prize</td>
+                </tr>
+                <tr>
+                    <td><img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1201914891-lead-1593011089.jpg?crop=1xw:1xh;center,top&resize=640:*" width="150" height="150"/></td>
+                    <td>Lin Manuel Miranda</td>
+                    <td>January 16, 1980</td>
+                    <td>Composer, Lyricist, Actor</td>
+                    <td>Created and starred in the Broadway musicals In the Heights and Hamilton</td>
+                </tr>
+                <tr>
+                    <td><img src="https://preview.redd.it/pls-i-need-pictures-of-gerard-ways-hair-during-the-black-v0-nlbzdeuf3e0e1.jpeg?width=640&crop=smart&auto=webp&s=6441b2894116cae705a3975d0f27fcb3be8c5c43" width="100" height="150"/></td>   
+                    <td>Gerard Way</td>
+                    <td>April 9, 1977</td>
+                    <td>Musician, Writer</td>
+                    <td>Lead vocalist of My Chemical Romance and writer of the comic book series The Umb
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+
+    <div id="schedule">
+        <h2>Weekly Schedule</h2>
+        <table border="1" cellpadding="10">
+            <thead>     
+                <tr>
+                    <th>Date</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Activity</th>
+                    <th>Location</th>
+                    <th>Notes</th>
+                    <th>Busy?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-09-01</td>
+                    <td>6:30</td>
+                    <td>8:45</td>
+                    <td>Morning Routine</td>
+                    <td>Home + Gym</td>
+                    <td>Includes breakfast and workout</td>
+                    <td><img src="/Portfolio/01-Personal Website (HTML)/images/busy.png" width="50" height="50"></td>
+                </tr>
+                <tr>
+                    <td>2024-09-01</td>
+                    <td>9:00</td>
+                    <td>15:00</td>
+                    <td>Class</td>
+                    <td>UP</td>
+                    <td>Includes relaxation breaks</td>
+                    <td><img src="/Portfolio/01-Personal Website (HTML)/images/busy.png"width="50" height="50"></td>
+                </tr>
+                <tr>
+                    <td>2024-09-01</td>
+                    <td>15:15</td>
+                    <td>16:30</td>
+                    <td>Lunch</td>
+                    <td>Home</td>
+                    <td>Includes relaxation breaks</td>
+                    <td><img src="/Portfolio/01-Personal Website (HTML)/images/busy.png"width="50" height="50"></td>
+                </tr>
+                <tr>
+                    <td>2024-09-01</td>
+                    <td>16:30</td>
+                    <td>18:30</td>
+                    <td>Work</td>
+                    <td>Library</td>
+                    <td>More important things than morning reports</td>
+                    <td><img src="/Portfolio/01-Personal Website (HTML)/images/busy.png"width="50" height="50"></td>
+                </tr>
+                <tr>
+                    <td>2024-09-01</td>
+                    <td>18:30</td>
+                    <td>19:15</td>
+                    <td>relaxation</td>
+                    <td>Home</td>
+                    <td>Includes dinner</td>
+                    <td><img src="/Portfolio/01-Personal Website (HTML)/images/free.png"width="50" height="50"></td>
+                </tr>
+                <tr>
+                    <td>2024-09-01</td>
+                    <td>19:15</td>
+                    <td>21:30</td>
+                    <td>Hakuna</td>
+                    <td>Church</td>
+                    <td>Youth group</td>
+                    <td><img src="/Portfolio/01-Personal Website (HTML)/images/busy.png"width="50" height="50"></td>
+                </tr>
+                <tr>
+                    <td>2024-09-01</td>
+                    <td>21:30</td>
+                    <td>22:30</td>
+                    <td>Relaxation</td>
+                    <td>Home</td>
+                    <td>Includes reading</td>
+                    <td><img src="/Portfolio/01-Personal Website (HTML)/images/free.png"width="50" height="50"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="Schedule-form">
+            <datelabel for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <hr>
+            <label for="start-time">Start Time:</label>
+            <input type="time" id="start-time" name="start-time">
+            <hr>
+            <label for="end-time">End Time:</label>
+            <input type="time" id="end-time" name="end-time">
+            <hr>
+            <label for="activity">Activity</label>
+            <input type="text" id="activity" name="Activity">
+            <hr>
+            <label for="location">Places</label>
+            <input type="text" id="location" name="Location">
+            <hr>
+            <label for="type">Type</label>
+            <select id="type" name="Type" required>
+                <option value="School">School</option>
+                <option value="Personal">Personal</option>
+                <option value="professional">Professional</option>
+                <option value="Family">Family</option>
+                <option value="Other">Other</option>
+            </select>
+            <hr>
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="Notes" rows="4" cols="50"></textarea>
+            <hr>
+            <label for="busy">Busy?</label>
+            <input type="checkbox" id="busy" name="Busy">
+            <hr>
+            <input type="submit" value="Add to schedule">
+        </form>
 
 </body>
 </html>
