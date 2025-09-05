@@ -1,3 +1,26 @@
 body {
     margin: 0;
 }
+
+#Top{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    margin-left: 480px;
+    padding: 20px;
+}
+
+#Mid{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin-left:240px;
+    padding:20px;
+}
+
+#Bot{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    padding: 20px;
+}
