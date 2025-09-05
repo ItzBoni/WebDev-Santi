@@ -1,3 +1,25 @@
 body {
     margin: 0;
 }
+
+.container{
+    display: flex;
+    height: 300px;
+    width: 500px;
+    background-color: beige;
+}
+
+#Left{
+    flex: 1;
+    background-color: rgb(1,42,123);
+}
+
+#Center{
+    flex:1;
+    background-color:rgb(244,202,24);
+}
+
+#Right{
+    flex:1;
+    background-color: rgb(199,19,37);
+}
