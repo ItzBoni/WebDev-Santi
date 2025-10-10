@@ -3,11 +3,11 @@
     all Prime Factors (if there are any) and display them.
 */
 
-var getPrimeFactors = function (n) {
+let getPrimeFactors = function () {
   "use strict";
 
   function isPrime(n) {
-    var i;
+    let i;
 
     for (i = 2; i <= Math.sqrt(n); i++) {
       if (n % i === 0) {
@@ -17,14 +17,25 @@ var getPrimeFactors = function (n) {
     return true;
   }
 
-  var i,
+  //Function that returns an array of the prime factors of a number from lowest to largest
+  function arrayOfPrimes(n){
+    let i,
     sequence = [];
+    for (i=2; i <= n; i++){
+      if ((n%i === 0) && isPrime(i)){
+        sequence.push(i);
+      }
+    } 
+    return sequence
+  }
+  
+  //I edited the function to accept only the things in the text field. (Also the HTML so it gets read as a number)
+  let num = Number(document.getElementById('num').value);
 
-  //TODO: Check which numbers are factors of n and also check if
-  // that number also happens to be a prime
+  let result = arrayOfPrimes(num);
 
-  return sequence;
+  document.getElementById('pf').innerHTML = result;
 };
+//Added the call to the function in the 
 
-// the prime factors for this number are: [ 2, 3, 5, 7, 11, 13 ]
-console.log(getPrimeFactors(30030));
+// the prime factors for this number are: [ 2, 3, 
