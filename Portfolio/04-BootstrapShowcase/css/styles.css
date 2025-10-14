@@ -1,0 +1,10 @@
+.carousel-item {
+    height: 70vh; /* 40% of the viewport height */
+    min-height: 300px; /* optional - ensure it's not too small on short screens */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* ensures image fills the container without distortion */
+}

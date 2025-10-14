@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button id="sidebarToggle"
+                class="btn p-2 border-0 ms-2"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sidebar"
+                aria-controls="sidebar"
+                aria-label="Open sidebar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wassup</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled mb-4">
+            <li><a class="link-body-emphasis d-block py-2" href="#">Hi</a></li>
+            <li><a class="link-body-emphasis d-block py-2" href="#">Gabriel</a></li>
+            <li><a class="link-body-emphasis d-block py-2" href="#">Moya</a></li>
+            </ul>
+            <hr>
+            <p class="text-secondary small mb-1">Bootrsrap Test</p>
+            <div class="d-grid gap-2">
+            <button class="btn btn-primary">Gamer</button>
+            <button class="btn btn-outline-secondary">No</button>
+            </div>
+        </div>
+    </div>
+    <div id="carouselIndicator" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/mountain.jpg" class="d-block w-100" alt="mountain">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mountains :D</h5>
+                    <p>I don't know where this mountain is, geoguessr guy please help</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/porsche 911.jpg" class="d-block w-100" alt="porsche 911 supercar">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Porsche 911</h5>
+                    <p>One of the best cars ever built. Wish I had one lol.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/shrine-entrance.jpg" class="d-block w-100" alt="japanese shrine entrance in a lake">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Shrine entrance</h5>
+                    <p>Looks cool, found it on pinterest.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicator" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicator" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
