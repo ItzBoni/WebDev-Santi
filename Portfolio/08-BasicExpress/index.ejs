@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
-
 <body>
     <h1>BMI Calculator</h1>
-    <form>
+    <form method="POST" action="/">
         <input type="text" name="weight" placeholder="Weight">
         <input type="text" name="height" placeholder="Height">
         <button type="submit" name="submit">Calculate BMI</button>
     </form>
+    <% if (typeof bmi !== 'undefined' && bmi !== '') { %>
+        <h2>Your BMI is: <%= bmi %></h2>
+    <% } %>
 </body>
-
 </html>
