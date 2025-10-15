@@ -26,7 +26,11 @@ Select 5 elements from the following list and make a small demo of how would you
 ---
 
 - Navbar with search field
-- Collapsible sidebar
+- Collapsible sideba
+- Complex modals
+- Badges with image and action
+- Breadcrumbs with icons
+- Loading buttons
 - Carousel with title and text
 - Hero with centered screenshot
 - Scrollspy

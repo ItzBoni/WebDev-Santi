@@ -8,56 +8,63 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <button id="sidebarToggle"
-                class="btn p-2 border-0 ms-2"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#sidebar"
-                aria-controls="sidebar"
-                aria-label="Open sidebar">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Wassup</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button id="sidebarToggle"
+                    class="btn p-2 border-0 ms-2"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#sidebar"
+                    aria-controls="sidebar"
+                    aria-label="Open sidebar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bootstrap Demo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogpost.html">Blogpost</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled mb-4">
+                <li><a class="link-body-emphasis d-block py-2" href="#">Hi</a></li>
+                <li><a class="link-body-emphasis d-block py-2" href="#">Gabriel</a></li>
+                <li><a class="link-body-emphasis d-block py-2" href="#">Moya</a></li>
+                </ul>
+                <hr>
+                <p class="text-secondary small mb-1">Bootrsrap Test</p>
+                <div class="d-grid gap-2">
+                <button class="btn btn-primary">Gamer</button>
+                <button class="btn btn-outline-secondary">No</button>
+                </div>
             </div>
         </div>
+    </header>
+    <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
     </nav>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="list-unstyled mb-4">
-            <li><a class="link-body-emphasis d-block py-2" href="#">Hi</a></li>
-            <li><a class="link-body-emphasis d-block py-2" href="#">Gabriel</a></li>
-            <li><a class="link-body-emphasis d-block py-2" href="#">Moya</a></li>
-            </ul>
-            <hr>
-            <p class="text-secondary small mb-1">Bootrsrap Test</p>
-            <div class="d-grid gap-2">
-            <button class="btn btn-primary">Gamer</button>
-            <button class="btn btn-outline-secondary">No</button>
-            </div>
-        </div>
-    </div>
     <div id="carouselIndicator" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
