@@ -16,8 +16,7 @@ app.listen(3000, () => {
     console.log("Listening in port 3000");
 });
 
-//ChatGPT generated this section, and the EJS code to accept the response from the server.
-//I was using agent mode and it filled it in automatically lol.
+
 app.get('/', (req, res) => {
     res.render('index');
 });
@@ -25,6 +24,6 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     const weight = Number(req.body.weight);
     const height = Number(req.body.height);
-    const bmi = weight && height ? ((weight / (height)^2)*10000) : '';
+    const bmi = weight && height ? ((weight / (height)^2)*10000) : ''; //Chat helped out with this section
     res.render('index', { bmi });
 });
