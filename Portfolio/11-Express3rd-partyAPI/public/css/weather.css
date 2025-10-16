@@ -1,0 +1,6 @@
+body { background-color: #f1f3f5; }
+.weather-partial { background: #fff; border-radius: 8px; }
+.weather-icon { width: 80px; height: 80px; }
+.weather-info { flex: 1; }
+.weather-main { color: #2c3e50; }
+.weather-description { text-transform: capitalize; }

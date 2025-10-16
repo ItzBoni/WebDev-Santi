@@ -1,0 +1,45 @@
+<div class="card weather-partial mb-3">
+    <div class="card-body d-flex align-items-center gap-3">
+        <% if (typeof data !== 'undefined' && data) { %>
+            <% var w = data.weather && data.weather[0] ? data.weather[0] : {}; var temp = data.main ? data.main.temp : null; var city = data.name;%>
+            <% if (w.icon) { %>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/<%= w.icon %>@2x.png" alt="<%= w.main || 'weather' %>">
+            <% } %>
+            <div class="weather-info">
+                <% if (city) { %>
+                    <div class="weather-main h4 mb-1"><b><%= city %></b></div>
+                <% } %>
+                <% if (w.main) { %>
+                    <div class="weather-main h5 mb-1"><%= w.main %></div>
+                <% } %>
+                <% if (w.description) { %>
+                    <div class="weather-description text-muted"><%= w.description %></div>
+                <% } %>
+                <% if (temp !== null && typeof temp !== 'undefined') { %>
+                    <div class="weather-temp mt-2"><strong><%= temp %>°C</strong></div>
+                <% } %>
+            </div>
+        <% } %>
+        <% if(error) { %>
+            <% console.log('Rendering error message:', error); %>
+            <% var aid = 'weather-alert-' + Date.now(); %>
+            <div id="<%= aid %>" class="alert alert-danger mb-0" role="alert" style="background-color:#f8d7da;color:#721c24;">
+                <strong>Can't retrieve city</strong><% if (error) { %> - <%= error %><% } %>
+            </div>
+            <script>
+            (function(id){
+                var el = document.getElementById(id);
+                if(!el) return;
+                // auto-dismiss after 3s with fade out
+                setTimeout(function(){
+                    el.style.transition = 'opacity 0.6s ease, max-height 0.6s ease';
+                    el.style.opacity = '0';
+                    el.style.maxHeight = '0';
+                    setTimeout(function(){ if(el && el.parentNode) el.parentNode.removeChild(el); }, 650);
+                }, 3000);
+            })('<%= aid %>');
+            </script>
+        
+        <% } %>
+    </div>
+</div>
