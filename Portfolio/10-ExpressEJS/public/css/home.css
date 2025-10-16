@@ -1,0 +1,33 @@
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.logo {
+    display: block;
+    margin: 0.5rem auto 0.25rem auto;
+    max-width: 75px;
+}
+
+h1, h2, h4 {
+    color: #2c3e50;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+.alert-greeting {
+    transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+    overflow: hidden;
+    max-height: 200px;
+    opacity: 1;
+}
+
+.alert-greeting.hide {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,28 @@
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1, label {
+    color: #2c3e50;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-success {
+    background-color: #27ae60;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #219150;
+}
+
+.logo {
+    display: block;
+    margin: 0.5rem auto 0.25rem auto;
+    max-width: 75px;
+}
