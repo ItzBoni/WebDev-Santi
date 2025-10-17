@@ -1,11 +1,8 @@
 const express = require("express");
-const https = require("https");
 const bodyParser = require("body-parser");
 const axios = require("axios");
-const FormData = require("form-data");
 const dotenv = require("dotenv");
 const path = require("path");
-const { error } = require("console");
 dotenv.config();
 
 const app = express();
@@ -25,7 +22,7 @@ app.get("/retrieveCityInfo", (req, res) => {
   const location = req.query.cityName;
   console.log(location);
 
-  var url = "https://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(location) + "&appid=e7a298c6c06fec6cea46c1cd4591c467&units=metric";
+  var url = "https://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(location) + "&appid="+process.env.API_KEY+"&units=metric";
   console.log(url);
   // GET requests do not have a body. Call axios.get with the URL (or use params).
   axios.get(url)
